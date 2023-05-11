@@ -1,0 +1,12 @@
+.outerFill, .innerFill{
+    height: 100px;
+    width: 7px;
+    border-radius: 5px;
+    background-color: rgb(176, 197, 176);
+    transform: rotate(180deg);
+}
+.innerFill{
+    background-color: green;
+    width: 100%;
+    transition: height .5s ease-out;
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #3f3f3f;
+}
+
+.expanseList{
+  height: 700px;
+  width: 90vw;
+  margin: 30px auto 30px auto;
+  padding: 50px;
+  background-color:#4d4d4d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 10px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.377);
+}
+

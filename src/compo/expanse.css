@@ -1,0 +1,20 @@
+.expanse{
+    display: flex;
+    background-color: #3f3f3f;
+    justify-content: space-between;
+    margin: 10px auto 10px auto;
+    text-align:center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.377);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    width: 80vw;
+    white-space: nowrap;
+    color: white;
+}
+.value{
+    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
+    background-color:green;
+    /* border:1px solid white; */
+}

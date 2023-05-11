@@ -1,0 +1,46 @@
+
+.addButton{
+    color: white;
+    margin: 70px auto;
+    width: fit-content;
+    padding: 10px;
+    background-color:green;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.inputField{
+    background-color: rgba(0, 0, 0, 0.308);
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 30px auto 30px auto;
+    gap:40px;
+    padding: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    width: fit-content;
+    box-shadow: 5px 5px 5px green;
+}
+.inputField input, .inputField button{
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid;
+    height: 33px;
+    width: 200px;
+    box-shadow: inset 5px 5px 5px rgba(136, 117, 133, 0.527);
+}
+.inputField input:focus{
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.596);
+    outline: none;
+}
+.inputField button{
+    box-shadow: none;
+    transition: all .05s ease-in;
+}
+.inputField button:hover{
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.356);
+    translate: -2px -2px;
+}
+.hidden{
+    display: none;
+}
