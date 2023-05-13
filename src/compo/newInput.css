@@ -16,6 +16,7 @@
     gap:40px;
     padding: 50px;
     border-radius: 10px;
+    border: 1px solid green;
     justify-content: center;
     width: fit-content;
     box-shadow: 5px 5px 5px green;
@@ -43,4 +44,7 @@
 }
 .hidden{
     display: none;
+}
+.errorView{
+    border: 1px solid red;
 }
