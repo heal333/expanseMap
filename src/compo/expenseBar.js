@@ -1,6 +1,6 @@
 import React,{useState} from "react";
-import './expanseBar.css'
-function ExpanseBar(props){
+import './expenseBar.css'
+function ExpenseBar(props){
     let heightFill = `${(props.data.amount * 100)/props.totalAmount}%`;
     return <div>
         <div className="outerFill">
@@ -9,4 +9,4 @@ function ExpanseBar(props){
     </div>
 }
 
-export default ExpanseBar;
+export default ExpenseBar;

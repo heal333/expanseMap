@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
-import Expense from './compo/expanse';
+import Expense from './compo/expense';
 import NewInput from './compo/newInput';
-import ExpanseBarCard from './compo/expanseBarCard';
+import ExpenseBarCard from './compo/expenseBarCard';
 import Filter from './compo/filter'
 
 function App() {
-  const expanse = [
+  const expense = [
     {
       usedOn: "car",
       amount: "28000",
@@ -34,11 +34,11 @@ function App() {
   ]
 
 
-  const [statefulExp, setExpanse] = useState(expanse);
-  const [filteredExp, setFilteredExp] = useState(expanse);
+  const [statefulExp, setExpense] = useState(expense);
+  const [filteredExp, setFilteredExp] = useState(expense);
 
-  function newExpanse(props) {
-    setExpanse((prv)=>{
+  function newExpense(props) {
+    setExpense((prv)=>{
       return [props, ...prv]
     });
     setFilteredExp((prv)=>{
@@ -59,11 +59,11 @@ function App() {
 
   return (
     <div>
-      <NewInput onSaveExpenseData={newExpanse} />
-      <ExpanseBarCard expanseData={filteredExp} key={2}></ExpanseBarCard>
+      <NewInput onSaveExpenseData={newExpense} />
+      <ExpenseBarCard expenseData={filteredExp} key={2}></ExpenseBarCard>
       <Filter className='filter' yearChange={yearChangeHandeler}></Filter>
-      <div className='expanseList'>
-        {filteredExp.length === 0 ? 'no expanse in this year': <div>{filteredExp.map((data) => (
+      <div className='expenseList'>
+        {filteredExp.length === 0 ? 'no expense in this year': <div>{filteredExp.map((data) => (
           <Expense usage={data.usedOn} value={data.amount} date={data.date}></Expense>
         ))}</div>}
       </div>

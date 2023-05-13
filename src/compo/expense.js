@@ -1,7 +1,7 @@
-import './expanse.css'
+import './expense.css'
 function Expense(attri){
-    return (<div className='expanse'>
-        <div>your expanse on {attri.date.toDateString()}</div>
+    return (<div className='expense'>
+        <div>your expense on {attri.date.toDateString()}</div>
         <div className='usedOn'>{attri.usage}</div>
         <div></div>
         <div></div>
